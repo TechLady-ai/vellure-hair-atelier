@@ -3,783 +3,169 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Vellure Hair Atelier — Luxury RAW & Virgin Hair Extensions up to 40"</title>
-  <meta name="description" content="Vellure Hair Atelier offers premium RAW Cambodian, RAW Indian and Virgin Brazilian hair bundles, wigs, closures and frontals in lengths 8–40 inches with HD Melt lace and 180–250% density." />
-  <meta name="keywords" content="raw hair, virgin hair, 40 inch bundles, 40 inch wigs, HD lace wigs, HD melt lace, Cambodian hair, Indian hair, Brazilian bundles, luxury hair extensions, soft life hair" />
-  <meta property="og:title" content="Vellure Hair Atelier — Luxury RAW & Virgin Hair" />
-  <meta property="og:description" content="RAW & Virgin bundles, wigs and HD Melt lace up to 40 inches for the soft-life woman." />
-  <meta property="og:type" content="website" />
+  <title>Vellure Hair Atelier – Luxury RAW & Virgin Hair</title>
 
+  <!-- SEO -->
+  <meta name="description" content="Vellure Hair Atelier offers premium RAW Cambodian, RAW Indian, and Virgin Brazilian bundles, wigs, closures, and HD lace.">
+  <meta name="keywords" content="raw hair, virgin hair, wigs, hd lace, closures, cambodian hair, indian hair, luxury hair extensions, 40 inch bundles">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- STYLES -->
   <style>
-    @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&display=swap');
-
-    * {
-      box-sizing: border-box;
-    }
+    * { box-sizing: border-box; }
 
     body {
       margin: 0;
       font-family: 'Cormorant Garamond', serif;
-      background: #000000;
-      color: #F5F0E6;
+      background: #000;
+      color: #F5E6C6;
+      text-align: center;
     }
 
-    a {
-      color: inherit;
-    }
-
-    a:visited {
-      color: inherit;
-    }
-
-    header {
-      position: sticky;
-      top: 0;
-      z-index: 50;
-      backdrop-filter: blur(14px);
-      background: rgba(0,0,0,0.82);
-      padding: 18px 40px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      border-bottom: 1px solid rgba(255,215,141,0.18);
-    }
-
-    .logo-gold {
-      font-size: 22px;
-      letter-spacing: 0.26em;
-      text-transform: uppercase;
-      background: linear-gradient(180deg,#f8e7b5 0%,#e0b85a 40%,#8a5a16 70%,#fdf2c8 100%);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      text-shadow: 0 3px 6px rgba(0,0,0,0.85);
-      text-decoration: none;
-      white-space: nowrap;
-    }
+    h1, h2, h3, h4 { font-weight: 500; letter-spacing: 0.15em; }
 
     nav {
-      display: flex;
-      align-items: center;
-      gap: 20px;
-      flex-wrap: wrap;
-      justify-content: flex-end;
-    }
-
-    nav a {
-      text-decoration: none;
-      color: #F5F0E6;
-      font-weight: 500;
-      letter-spacing: 0.08em;
-      font-size: 12px;
-      text-transform: uppercase;
-      position: relative;
-      padding-bottom: 4px;
-    }
-
-    nav a::after {
-      content: "";
-      position: absolute;
-      left: 0;
-      bottom: 0;
-      width: 0;
-      height: 1px;
-      background: linear-gradient(90deg,#FFD78D,#B68A50);
-      transition: width 0.25s ease;
-    }
-
-    nav a:hover::after {
       width: 100%;
+      padding: 20px;
+      font-size: 22px;
+      letter-spacing: 0.22em;
+      text-align: left;
+      padding-left: 40px;
+      border-bottom: 1px solid #2a2a2a;
+    }
+
+    section { padding: 80px 20px; }
+
+    .card-grid {
+      display: grid;
+      gap: 40px;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      padding: 40px;
+      max-width: 1300px;
+      margin: auto;
+    }
+
+    .card {
+      background: #0a0a0a;
+      border: 1px solid #3c3c3c;
+      border-radius: 25px;
+      padding: 30px;
+      text-align: left;
+      min-height: 350px;
+    }
+
+    .tag {
+      display: inline-block;
+      background: #F5E6C6;
+      color: black;
+      padding: 4px 10px;
+      font-size: 12px;
+      border-radius: 20px;
+      margin-bottom: 10px;
+      text-transform: uppercase;
+      letter-spacing: 0.15em;
     }
 
     .btn {
+      margin-top: 20px;
       display: inline-block;
-      padding: 11px 24px;
-      border-radius: 999px;
-      border: 1px solid rgba(255,215,141,0.7);
-      font-size: 13px;
-      letter-spacing: 0.18em;
-      text-transform: uppercase;
-      background: radial-gradient(circle at top, #fdf2c8 0, #e0b85a 45%, #8a5a16 85%);
-      color: #000;
+      padding: 12px 32px;
+      color: black;
+      background: linear-gradient(90deg, #e7d3a5, #fce9c6);
+      border-radius: 30px;
       text-decoration: none;
-      cursor: pointer;
-      transition: all 0.25s ease;
-      box-shadow: 0 10px 26px rgba(0,0,0,0.7);
-    }
-
-    .btn:hover {
-      background: radial-gradient(circle at top, #f8e7b5 0, #d7a756 45%, #704312 95%);
-      color: #000;
-      border-color: #fff4cf;
-      box-shadow: 0 14px 34px rgba(0,0,0,0.9);
-      transform: translateY(-1px);
-    }
-
-    .promo-banner {
-      background: radial-gradient(circle at top, #2a1b05 0, #000 55%);
-      padding: 44px 16px 48px 16px;
-      border-bottom: 1px solid rgba(255,215,141,0.18);
-      box-shadow: 0 24px 70px rgba(0,0,0,0.85);
-      text-align: center;
-    }
-
-    .promo-inner {
-      max-width: 1200px;
-      margin: 0 auto;
-      color: #FDF2C8;
-    }
-
-    .promo-tag {
-      font-size: 13px;
-      letter-spacing: 0.32em;
-      text-transform: uppercase;
-      margin-bottom: 10px;
-      color: #F8E7B5;
-    }
-
-    .promo-main {
-      display: inline-flex;
-      align-items: baseline;
-      gap: 12px;
-      margin-bottom: 10px;
-    }
-
-    .promo-percent {
-      font-size: 42px;
-      font-weight: 700;
-      letter-spacing: 0.18em;
-      background: linear-gradient(180deg,#fdf2c8 0%,#f3d88e 40%,#b27a27 75%,#f8e7b5 100%);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      text-shadow: 0 6px 16px rgba(0,0,0,0.9);
-    }
-
-    .promo-off {
-      font-size: 26px;
-      letter-spacing: 0.22em;
-      text-transform: uppercase;
-      color: #FFD78D;
-    }
-
-    .promo-sub {
-      font-size: 16px;
-      margin-bottom: 18px;
-      opacity: 0.9;
-    }
-
-    .promo-note {
-      font-size: 12px;
-      opacity: 0.7;
-      margin-top: 6px;
-    }
-
-    .hero {
-      position: relative;
-      padding: 140px 40px 120px 40px;
-      max-width: 1600px;
-      margin: 0 auto;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: flex-start;
-      min-height: 480px;
-      background: linear-gradient(to right, rgba(0,0,0,0.92), rgba(0,0,0,0.45)), url('images/hero-softlife.jpg');
-      background-size: cover;
-      background-position: center;
-      border-radius: 0;
-      box-shadow: 0 40px 120px rgba(0,0,0,0.85);
-    }
-
-    .hero h1 {
-      font-size: 56px;
       font-weight: 600;
-      line-height: 1.05;
-      letter-spacing: 0.14em;
-      text-transform: uppercase;
-      margin-bottom: 24px;
-      background: linear-gradient(180deg,#f8e7b5 0%,#e0b85a 40%,#8a5a16 70%,#fdf2c8 100%);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      text-shadow: 0 4px 10px rgba(0,0,0,0.9);
+      letter-spacing: 0.1em;
+      transition: .3s;
     }
 
-    .hero p {
-      font-size: 18px;
-      max-width: 520px;
-      margin: 0;
-      line-height: 1.7;
-      color: #F5F0E6;
-      opacity: 0.9;
-    }
-
-    .section {
-      padding: 80px 32px;
-      text-align: center;
-    }
-
-    .section h2 {
-      font-size: 40px;
-      letter-spacing: 0.28em;
-      text-transform: uppercase;
-      margin-bottom: 10px;
-      background: linear-gradient(90deg, #FFD78D, #B68A50);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-    }
-
-    .section p {
-      max-width: 760px;
-      margin: 12px auto 40px auto;
-      font-size: 17px;
-      line-height: 1.8;
-    }
-
-    .products-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
-      gap: 24px;
-      max-width: 1100px;
-      margin: 0 auto;
-    }
-
-    .product-card {
-      background-color: #111111;
-      border-radius: 22px;
-      padding: 28px;
-      box-shadow: 0 22px 55px rgba(0, 0, 0, 0.55);
-      text-align: left;
-      transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
-      border: 1px solid rgba(255,215,141,0.28);
-    }
-
-    .product-card:hover {
-      transform: translateY(-6px);
-      box-shadow: 0 28px 70px rgba(0,0,0,0.85);
-      border-color: rgba(193,162,127,0.55);
-    }
-
-    .product-image {
-      width: 100%;
-      height: 190px;
-      border-radius: 18px;
-      margin-bottom: 16px;
-      object-fit: cover;
-      display: block;
-      box-shadow: 0 20px 40px rgba(0,0,0,0.7);
-      border: 1px solid rgba(255,215,141,0.35);
-      background-position: center;
-      background-size: cover;
-    }
-
-    .product-title {
-      font-weight: 600;
-      margin-bottom: 6px;
-      font-size: 17px;
-    }
-
-    .product-meta {
-      font-size: 14px;
-      opacity: 0.8;
-      margin-bottom: 6px;
-    }
-
-    .price {
-      font-size: 18px;
-      font-weight: 700;
-      margin-bottom: 10px;
-    }
-
-    .badge {
-      display: inline-block;
-      font-size: 11px;
-      padding: 4px 10px;
-      border-radius: 999px;
-      background-color: #FFD78D;
-      color: #000000;
-      margin-bottom: 8px;
-      letter-spacing: 0.14em;
-      text-transform: uppercase;
-    }
-
-    .faq-item {
-      max-width: 800px;
-      margin: 0 auto 24px auto;
-      text-align: left;
-    }
-
-    .faq-item h3 {
-      font-size: 18px;
-      margin-bottom: 6px;
-    }
-
-    .two-column {
-      max-width: 1100px;
-      margin: 0 auto;
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-      gap: 32px;
-      text-align: left;
-    }
-
-    .two-column p {
-      margin: 0 0 12px 0;
-    }
-
-    footer {
-      background-color: #000000;
-      color: #FFD78D;
-      padding: 60px 24px 80px 24px;
-      text-align: center;
-      margin-top: 40px;
-      font-size: 14px;
-      letter-spacing: 0.22em;
-      text-transform: uppercase;
-      border-top: 1px solid rgba(255,215,141,0.24);
-      box-shadow: inset 0 18px 55px rgba(255,215,141,0.08);
-    }
-
-    /* Exit Intent Modal */
-    .exit-modal-backdrop {
-      position: fixed;
-      inset: 0;
-      background: rgba(0,0,0,0.78);
-      display: none;
-      align-items: center;
-      justify-content: center;
-      z-index: 999;
-    }
-
-    .exit-modal {
-      max-width: 460px;
-      width: 92%;
-      background: radial-gradient(circle at top, #2a1b05 0, #050505 55%);
-      border-radius: 24px;
-      padding: 28px 26px 24px 26px;
-      border: 1px solid rgba(255,215,141,0.55);
-      box-shadow: 0 26px 80px rgba(0,0,0,0.9);
-      text-align: left;
-      color: #F5F0E6;
-      position: relative;
-    }
-
-    .exit-modal-title {
-      font-size: 20px;
-      letter-spacing: 0.18em;
-      text-transform: uppercase;
-      margin: 0 0 8px 0;
-      background: linear-gradient(90deg,#FFD78D,#B68A50);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-    }
-
-    .exit-modal-sub {
-      font-size: 15px;
-      opacity: 0.9;
-      margin: 0 0 14px 0;
-    }
-
-    .exit-modal-list {
-      font-size: 14px;
-      opacity: 0.9;
-      margin: 0 0 16px 18px;
-    }
-
-    .exit-modal-list li {
-      margin-bottom: 4px;
-    }
-
-    .exit-modal-actions {
-      display: flex;
-      gap: 12px;
-      flex-wrap: wrap;
-      align-items: center;
-      margin-top: 8px;
-    }
-
-    .exit-secondary {
-      background: transparent;
-      border: none;
-      color: #F5F0E6;
-      font-size: 13px;
-      text-decoration: underline;
-      cursor: pointer;
-      padding: 6px 4px;
-    }
-
-    .exit-close-icon {
-      position: absolute;
-      top: 10px;
-      right: 14px;
-      cursor: pointer;
-      font-size: 16px;
-      color: #FFD78D;
-    }
-
-    @media (max-width: 768px) {
-      header {
-        padding: 14px 16px;
-      }
-      .hero {
-        padding: 120px 18px 90px 18px;
-      }
-      .hero h1 {
-        font-size: 34px;
-        letter-spacing: 0.15em;
-      }
-      nav {
-        gap: 12px;
-      }
-      .section {
-        padding: 60px 18px;
-      }
-    }
+    .btn:hover { opacity: .85; }
   </style>
+
 </head>
-<body id="top">
+<body>
 
-  <header>
-    <a href="#top" class="logo-gold">Vellure Hair Atelier</a>
-    <nav>
-      <a href="#shop">Shop</a>
-      <a href="#raw">RAW Hair</a>
-      <a href="#virgin">Virgin Hair</a>
-      <a href="#wigs">Wigs</a>
-      <a href="#lace">Closures & Frontals</a>
-      <a href="#bundles">Bundle Deals</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
+  <!-- HEADER -->
+  <nav>V E L L U R E &nbsp; H A I R &nbsp; A T E L I E R</nav>
 
-  <section class="promo-banner">
-    <div class="promo-inner">
-      <div class="promo-tag">Soft-Life Launch Event</div>
-      <div class="promo-main" style="margin-bottom: 18px;">
-        <span class="promo-percent">NEW COLLECTION</span>
+  <!-- HERO -->
+  <section id="hero">
+    <h1 style="font-size:52px;">LUXURY RAW & VIRGIN HAIR</h1>
+    <p style="font-size:20px; max-width:650px; margin:auto;">
+      Premium RAW Cambodian • RAW Indian • Virgin Brazilian hair up to 40 inches  
+      HD Melt lace • Luxury installs for the soft-life woman.
+    </p>
+    <a href="#best-sellers" class="btn">Shop Best Sellers</a>
+  </section>
+
+  <!-- BEST SELLERS -->
+  <section id="best-sellers">
+    <h2 style="font-size:40px;">BEST SELLERS</h2>
+
+    <div class="card-grid">
+
+      <div class="card">
+        <div class="tag">RAW Cambodian</div>
+        <h3>40” RAW Soft-Life Straight Wig</h3>
+        <p>HD Melt 13×6 · 250% density<br><b>From $899</b></p>
+        <p>A floor-grazing RAW wig with a silk-press finish for luxury installs.</p>
       </div>
-      <div class="promo-sub">Premium RAW & Virgin Hair • 8–40" • HD Melt Lace</div>
-      <a href="#shop" class="btn">Shop the Launch</a>
-      <div class="promo-note">No massive markdowns — just luxury, fair pricing, and limited launch inventory.</div>
+
+      <div class="card">
+        <div class="tag">Brazilian</div>
+        <h3>Body Wave Bundle Trio 20/22/24"</h3>
+        <p>3-Bundle Deal<br><b>From $265</b></p>
+        <p>Soft, romantic movement with full install volume.</p>
+      </div>
+
+      <div class="card">
+        <div class="tag">HD Melt</div>
+        <h3>HD Melt 5×5 Closure</h3>
+        <p>Invisible Hairline<br><b>From $115</b></p>
+        <p>Ultra-thin HD lace that disappears into the skin for a perfect melt.</p>
+      </div>
+
     </div>
   </section>
 
-  <section class="hero">
-    <div>
-      <h1>Luxury Hair<br>for Her Soft-Life Era</h1>
-      <p>RAW & Virgin • 8–40" • HD Melt Lace • 180–250% Density • Black & Gold Luxury Extensions.</p>
-      <a href="#shop" class="btn" style="margin-top: 26px;">Shop Best Sellers</a>
+  <!-- UPSELLS -->
+  <section id="bf-upsells">
+    <h2 style="font-size:40px;">BLACK FRIDAY SOFT-LIFE BONUSES</h2>
+    <p>Unlock exclusive gifts when you invest in your install.</p>
+
+    <div class="card-grid">
+
+      <div class="card">
+        <div class="tag">Free Gift</div>
+        <h3>Spend $150 → Free Satin Bonnet</h3>
+        <p>Value $18 · Protects Installs</p>
+        <p>Automatically added at checkout.</p>
+      </div>
+
+      <div class="card">
+        <div class="tag">Free Gift</div>
+        <h3>Spend $250 → Melt Band + Edge Brush</h3>
+        <p>Value $20 · Perfecting Tools</p>
+        <p>Automatically added at checkout.</p>
+      </div>
+
+      <div class="card">
+        <div class="tag">Free Gift</div>
+        <h3>Spend $350 → Full Care Kit</h3>
+        <p>Value $45 · Silk Press Essentials</p>
+        <p>Automatically included with premium orders.</p>
+      </div>
+
     </div>
+
   </section>
 
-  <!-- Best Sellers -->
-  <section class="section" id="shop">
-    <h2>Best Sellers</h2>
-    <p>Signature looks that sell out first: long lengths, HD melts and soft-life textures your clients request by name.</p>
-    <div class="products-grid">
-      <div class="product-card">
-        <img src="images/raw-cambodian-wig.jpg" alt="RAW Cambodian 40 inch wig" class="product-image" />
-        <div class="badge">RAW Cambodian</div>
-        <div class="product-title">40" Soft-Life Straight — RAW Cambodian Wig</div>
-        <div class="product-meta">HD Melt 13×6 • 250% Couture Density</div>
-        <div class="price">From $899</div>
-        <p>A floor-grazing RAW wig with a silk-press finish and density all the way through the ends. For birthdays, launches and luxury entrances.</p>
-      </div>
-      <div class="product-card">
-        <img src="images/brazilian-body-wave-trio.jpg" alt="Brazilian body wave bundles" class="product-image" />
-        <div class="badge">Brazilian</div>
-        <div class="product-title">Brazilian Body Wave Trio — 20/22/24"</div>
-        <div class="product-meta">Everyday Glam • 3 Bundle Set</div>
-        <div class="price">From $265</div>
-        <p>Our go-to body wave bundle deal for full installs with movement, volume and a soft, romantic wave pattern.</p>
-      </div>
-      <div class="product-card">
-        <img src="images/hd-closure-5x5.jpg" alt="HD lace closure" class="product-image" />
-        <div class="badge">HD Melt Lace</div>
-        <div class="product-title">HD Melt 5×5 Closure — All Textures</div>
-        <div class="product-meta">Beginner-Friendly • Invisible Hairline</div>
-        <div class="price">From $115</div>
-        <p>Ultra-thin HD lace that disappears into the skin and frames the face with a soft, natural hairline. The finishing touch for every install.</p>
-      </div>
-    </div>
+  <!-- FOOTER -->
+  <section style="padding:40px; font-size:14px; opacity:.6;">
+    © 2025 Vellure Hair Atelier · All Rights Reserved  
   </section>
 
-  <!-- RAW Section -->
-  <section class="section" id="raw">
-    <h2>RAW Luxury Atelier</h2>
-    <p>Hand-selected RAW Cambodian and RAW Indian bundles with thick ends, clean wefts and a natural, unprocessed luster. Designed for the woman who expects her installs to last seasons, not weeks.</p>
-    <div class="products-grid" style="margin-top: 32px;">
-      <div class="product-card">
-        <img src="images/raw-cambodian-bundles.jpg" alt="RAW Cambodian bundles" class="product-image" />
-        <div class="badge">RAW Cambodian</div>
-        <div class="product-title">RAW Cambodian Straight Bundles — 12–40"</div>
-        <div class="product-meta">True RAW • Thick Ends • Cuticle-Aligned</div>
-        <div class="price">From $120</div>
-        <p>An investment bundle with silk-press movement and density from root to tip. Ideal for sleek installs, middle parts and timeless glam.</p>
-      </div>
-      <div class="product-card">
-        <img src="images/raw-indian-wave-bundles.jpg" alt="RAW Indian wave bundles" class="product-image" />
-        <div class="badge">RAW Indian</div>
-        <div class="product-title">RAW Indian Natural Wave Bundles — 12–40"</div>
-        <div class="product-meta">Soft Wave Pattern • Everyday Elevation</div>
-        <div class="price">From $115</div>
-        <p>Soft, effortless waves that can be worn in their natural pattern or silk-pressed bone straight. Perfect for women who like options.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- Virgin Section -->
-  <section class="section" id="virgin">
-    <h2>Everyday Luxury Virgin Hair</h2>
-    <p>Virgin Brazilian and Malaysian bundles that hold a curl, take heat beautifully and photograph like a filter. Built for everyday glam, vacations and content days.</p>
-    <div class="products-grid" style="margin-top: 32px;">
-      <div class="product-card">
-        <img src="images/brazilian-body-wave.jpg" alt="Brazilian body wave" class="product-image" />
-        <div class="badge">Brazilian</div>
-        <div class="product-title">Brazilian Body Wave Bundles — 8–40"</div>
-        <div class="product-meta">Soft-Glam Wave • 3 & 4 Bundle Deals</div>
-        <div class="price">From $95</div>
-        <p>The classic body wave everyone asks about: full, bouncy and easy to style. For clients who want glam with minimal effort.</p>
-      </div>
-      <div class="product-card">
-        <img src="images/malaysian-straight.jpg" alt="Malaysian straight bundles" class="product-image" />
-        <div class="badge">Malaysian</div>
-        <div class="product-title">Malaysian Straight Bundles — 8–30"</div>
-        <div class="product-meta">Silky Sheen • Everyday Wear</div>
-        <div class="price">From $85</div>
-        <p>A silky, polished straight texture that moves with you from office to after-hours. Lightweight, smooth and photo-ready.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- Lace Section -->
-  <section class="section" id="lace">
-    <h2>HD Melt Lace Collection</h2>
-    <p>Ultra-thin, invisible HD Melt Lace for flawless installs. 5×5, 13×4 & 13×6 lace options available in all textures.</p>
-    <a href="#bf-upsells" class="btn">View Lace Rewards</a>
-  </section>
-
-  <!-- Wigs Section -->
-  <section class="section" id="wigs">
-    <h2>Atelier Wig Studio</h2>
-    <p>Luxury ready-to-wear wigs crafted with HD lace. Available in 180%, 200% & 250% densities and 16–40 inch lengths.</p>
-    <a href="#shop" class="btn">Shop Wig Best Sellers</a>
-  </section>
-
-  <!-- Bundles Section -->
-  <section class="section" id="bundles">
-    <h2>The Vellure Bundle Vault</h2>
-    <p>2, 3 & 4 bundle deals for stylists, glam installs, and long lengths. Available in RAW and Virgin textures.</p>
-    <a href="#shop" class="btn">Shop Bundle Deals</a>
-  </section>
-
-  <!-- Care Collection -->
-  <section class="section" id="care-collection">
-    <h2>Soft-Life Care Collection</h2>
-    <p>Luxury maintenance essentials that protect your install, extend the life of your RAW hair and elevate your daily routine. These items have the highest customer repeat-purchase rate.</p>
-    <div class="products-grid" style="margin-top: 32px;">
-      <div class="product-card">
-        <img src="images/satin-bonnet.jpg" alt="Satin bonnet" class="product-image" />
-        <div class="badge">Soft-Life Essential</div>
-        <div class="product-title">Luxury Double-Layer Satin Bonnet</div>
-        <div class="product-meta">Protects RAW Hair • Nighttime Care</div>
-        <div class="price">$18</div>
-        <p>Prevents friction, shedding and dryness so your installs stay flawless for months. A must-have for every hair wearer.</p>
-      </div>
-      <div class="product-card">
-        <img src="images/melt-band.jpg" alt="Melt band" class="product-image" />
-        <div class="badge">Top Seller</div>
-        <div class="product-title">Vellure Elastic Melt Band</div>
-        <div class="product-meta">HD Lace • Daily Use</div>
-        <div class="price">$12</div>
-        <p>Melts lace into the skin for a seamless finish. Ideal for wigs, closures and frontals.</p>
-      </div>
-      <div class="product-card">
-        <img src="images/lace-glue.jpg" alt="Lace glue" class="product-image" />
-        <div class="badge">Stylist Favorite</div>
-        <div class="product-title">Waterproof Lace Glue</div>
-        <div class="product-meta">Strong Hold • Sweat-Resistant</div>
-        <div class="price">$22</div>
-        <p>A professional-grade hold that keeps installs secure for gym days, vacations and long wear.</p>
-      </div>
-      <div class="product-card">
-        <img src="images/glue-remover.jpg" alt="Glue remover" class="product-image" />
-        <div class="badge">Essential Add-On</div>
-        <div class="product-title">Lace Glue Remover</div>
-        <div class="product-meta">Gentle on Skin • Easy Removal</div>
-        <div class="price">$15</div>
-        <p>Breaks down adhesive safely without damaging lace or pulling your natural hair.</p>
-      </div>
-      <div class="product-card">
-        <img src="images/argan-oil.jpg" alt="Argan oil" class="product-image" />
-        <div class="badge">Best Value</div>
-        <div class="product-title">Lightweight Argan Serum</div>
-        <div class="product-meta">Adds Shine • Reduces Frizz</div>
-        <div class="price">$16</div>
-        <p>Perfect for RAW hair — a small amount adds shine without weighing hair down.</p>
-      </div>
-      <div class="product-card">
-        <img src="images/heat-protectant.jpg" alt="Heat protectant" class="product-image" />
-        <div class="badge">Daily Care</div>
-        <div class="product-title">Thermal Protectant Mist</div>
-        <div class="product-meta">Silk Press Ready</div>
-        <div class="price">$17</div>
-        <p>Protects hair from heat damage when straightening or curling. Keeps ends healthy longer.</p>
-      </div>
-      <div class="product-card">
-        <img src="images/edge-brush.jpg" alt="Edge brush" class="product-image" />
-        <div class="badge">Most Popular</div>
-        <div class="product-title">3-in-1 Edge Brush</div>
-        <div class="product-meta">Perfect for Melts</div>
-        <div class="price">$8</div>
-        <p>A gentle precision brush for laying edges, applying tint and smoothing lace.</p>
-      </div>
-      <div class="product-card">
-        <img src="images/wide-comb.jpg" alt="Wide tooth comb" class="product-image" />
-        <div class="badge">RAW Safe</div>
-        <div class="product-title">Wide-Tooth Detangling Comb</div>
-        <div class="product-meta">Prevents Breakage</div>
-        <div class="price">$9</div>
-        <p>RAW hair must be detangled gently — this comb prevents shedding and preserves length.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- Length Guide -->
-  <section class="section" id="length-guide">
-    <h2>Length & Density Guide</h2>
-    <p>Vellure Hair Atelier offers 8–40 inch bundles and 16–40 inch wigs in 180%, 200% and 250% density. Use this guide to choose your look.</p>
-    <div class="two-column">
-      <div>
-        <h3>Lengths</h3>
-        <p><strong>8–16"</strong> — bobs, natural everyday styles</p>
-        <p><strong>18–24"</strong> — everyday glam, work & weekend</p>
-        <p><strong>26–30"</strong> — full glam, birthdays, content</p>
-        <p><strong>32–40"</strong> — soft-life luxury, runway & editorial</p>
-      </div>
-      <div>
-        <h3>Density</h3>
-        <p><strong>180%</strong> — Soft Luxe: natural fullness for daily wear.</p>
-        <p><strong>200%</strong> — Signature Atelier Fullness: rich, full and glamorous.</p>
-        <p><strong>250%</strong> — Couture Volume: maximum density for ultra-glam looks.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- Black Friday Rewards -->
-  <section class="section" id="bf-upsells">
-    <h2>Black Friday Soft-Life Rewards</h2>
-    <p>Unlock exclusive luxury gifts when you invest in your install. These bonuses boost conversions and feel high-end without hurting profit.</p>
-    <div class="products-grid" style="margin-top: 32px;">
-      <div class="product-card">
-        <div class="badge">Free Gift</div>
-        <div class="product-title">Spend $150 → Free Satin Bonnet</div>
-        <div class="product-meta">Value $18 • Protects Installs</div>
-        <p>Your order automatically includes a luxury double-layer satin bonnet when you reach $150+. Perfect for RAW hair protection.</p>
-      </div>
-      <div class="product-card">
-        <div class="badge">Free Gift</div>
-        <div class="product-title">Spend $250 → Free Melt Band + Edge Brush</div>
-        <div class="product-meta">Value $20</div>
-        <p>A stylist-approved duo for melting lace and perfecting finishes. Automatically added at checkout.</p>
-      </div>
-      <div class="product-card">
-        <div class="badge">VIP Reward</div>
-        <div class="product-title">Spend $350 → Free Argan Shine Serum</div>
-        <div class="product-meta">Value $16 • RAW-Safe</div>
-        <p>A lightweight serum to reduce frizz and add shine without weighing down RAW hair. Great for long lengths.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- FAQ -->
-  <section class="section" id="faq">
-    <h2>FAQ</h2>
-    <div class="faq-item">
-      <h3>How long does shipping take?</h3>
-      <p>Processing is typically 1–3 business days. Once your order ships, delivery usually takes 2–5 business days for U.S. orders depending on the shipping method selected at checkout.</p>
-    </div>
-    <div class="faq-item">
-      <h3>Is this real RAW hair?</h3>
-      <p>Our RAW collections are sourced from trusted suppliers and are cuticle-aligned, unprocessed and built to last 2–5 years with proper care.</p>
-    </div>
-    <div class="faq-item">
-      <h3>What is HD Melt Lace?</h3>
-      <p>HD Melt Lace is ultra-thin, soft lace designed to blend seamlessly into the skin for a nearly invisible hairline. It is perfect for beginners and stylists who want a flawless melt.</p>
-    </div>
-    <div class="faq-item">
-      <h3>Do you accept returns?</h3>
-      <p>For hygiene reasons, hair must be unused, uninstalled, and in original packaging to be eligible for return. Please create a detailed return policy in your Shopify store that reflects your exact terms.</p>
-    </div>
-  </section>
-
-  <!-- Contact -->
-  <section class="section" id="contact">
-    <h2>Contact</h2>
-    <p>Questions about your order, textures or custom recommendations? Email our support team:</p>
-    <p><strong>support@vellurehairatelier.com</strong></p>
-    <p>We typically respond within 1–2 business days.</p>
-  </section>
-
-  <!-- Exit Modal -->
-  <div class="exit-modal-backdrop" id="exit-modal-backdrop">
-    <div class="exit-modal">
-      <div class="exit-close-icon exit-close">×</div>
-      <div class="exit-modal-title">Wait—soft-life gift inside</div>
-      <p class="exit-modal-sub">Before you leave, unlock your Black Friday soft-life rewards on this order:</p>
-      <ul class="exit-modal-list">
-        <li>Spend <strong>$150</strong> → Free satin bonnet</li>
-        <li>Spend <strong>$250</strong> → Free melt band + edge brush</li>
-        <li>Spend <strong>$350</strong> → Free argan shine serum</li>
-      </ul>
-      <div class="exit-modal-actions">
-        <a href="#bf-upsells" class="btn" id="exit-cta">Unlock My Gift</a>
-        <button class="exit-secondary exit-close">No thanks, I’ll shop later</button>
-      </div>
-    </div>
-  </div>
-
-  <footer>
-    <p>© 2025 Vellure Hair Atelier — All Rights Reserved</p>
-    <p>Premium RAW & Virgin Hair Extensions • Fast Shipping • HD Melt Lace</p>
-  </footer>
-
-  <script>
-    document.addEventListener('DOMContentLoaded', function () {
-      // Exit-intent popup
-      const exitBackdrop = document.getElementById('exit-modal-backdrop');
-      const exitCloses = document.querySelectorAll('.exit-close');
-
-      let exitShown = false;
-
-      function showExitModal() {
-        if (exitShown) return;
-        exitShown = true;
-        if (exitBackdrop) {
-          exitBackdrop.style.display = 'flex';
-        }
-      }
-
-      function hideExitModal() {
-        if (exitBackdrop) {
-          exitBackdrop.style.display = 'none';
-        }
-      }
-
-      exitCloses.forEach(btn => {
-        btn.addEventListener('click', hideExitModal);
-      });
-
-      // Trigger on mouseleave at top of viewport (desktop)
-      document.addEventListener('mouseleave', function (e) {
-        if (e.clientY <= 0) {
-          showExitModal();
-        }
-      });
-
-      // Fallback: show after 45 seconds on mobile
-      setTimeout(function () {
-        if (!exitShown) showExitModal();
-      }, 45000);
-    });
-  </script>
 </body>
 </html>
